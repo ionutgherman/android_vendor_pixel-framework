@@ -67,7 +67,6 @@ class ThemeOverlayControllerGoogle @Inject constructor(
     keyguardTransitionInteractor: KeyguardTransitionInteractor,
     uiModeManager: UiModeManager,
     configurationController: ConfigurationController,
-    tunerService: TunerService,
     @param:Main private val mainResources: Resources,
     private val systemPropertiesHelper: SystemPropertiesHelper
 ) : ThemeOverlayController(
@@ -90,8 +89,7 @@ class ThemeOverlayControllerGoogle @Inject constructor(
     javaAdapter,
     keyguardTransitionInteractor,
     uiModeManager,
-    configurationController,
-    tunerService
+    configurationController
 ) {
     init {
         configurationController.addCallback(object :
