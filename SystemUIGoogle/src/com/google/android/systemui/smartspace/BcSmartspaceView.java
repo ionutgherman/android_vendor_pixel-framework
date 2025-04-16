@@ -59,6 +59,9 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     public Animator mRunningAnimation;
     public int mScrollState;
     public ViewPager mViewPager;
+    private boolean mClockStyleEnabled = false;
+    
+    private static final String CLOCK_STYLE = "system:" + "clock_style";
 
     public BcSmartspaceView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);

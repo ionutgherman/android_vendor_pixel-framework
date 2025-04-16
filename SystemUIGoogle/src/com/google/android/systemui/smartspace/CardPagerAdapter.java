@@ -59,6 +59,9 @@ public class CardPagerAdapter extends PagerAdapter {
     public boolean mKeyguardBypassEnabled = false;
     public boolean mHasDifferentTargets = false;
     public String mUiSurface;
+    private boolean mClockStyleEnabled = false;
+
+    private static final String CLOCK_STYLE = "system:" + "clock_style";
 
     List<SmartspaceTarget> getTargets() {
         return this.mSmartspaceTargets;
